@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<%- include("header") %> 
+<body>
+    <div>
+        <h1>High Scores:</h1>
+        <ol>
+            <% for( let i = 0; i < scores.length && i < 3 ; i++ ) { %>
+                <li><%=scores[i].name%>: <%=scores[i].score%></li>
+            <% } %> 
+        </ol> 
+    </div>
+    <div class="container">
+        <form action="/start" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <button class="button">play</button>
+        </form>
+    </div>
+</body>
+</html>

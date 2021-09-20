@@ -1,0 +1,133 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to right, #3b0000, #ff0000 );
+    font-family: 'Press Start 2P', cursive;
+}
+h1{
+    font-size: 2.5rem;
+    color: azure;
+    text-align: center;
+    padding-top: 2rem;
+}
+p {
+    font-size: 1.75rem;
+    color: azure;
+    text-align: center;
+    padding-top: 0.5rem;
+}
+li {
+    font-size: 1.5rem;
+    color: azure;
+    text-align: center;
+}
+::marker{
+    color: rgba(000, 000, 000, 0);
+
+}
+.button {
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 400 !important;
+    background-color: #e63946ff;
+    color: azure;
+    /* padding: 10px 25px; */
+    /* margin: 2rem 0;
+    margin-left: 10rem; */
+    text-align: center;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    bottom: 5rem;
+    text-decoration: none;
+    border: 0px;
+    width: max-content;
+    cursor: pointer;
+    transition: all 0.3s 0s ease-in-out;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.button:hover {
+    transform: scale(1.04, 1);
+    background-color: rgb(216, 10, 27);
+    text-decoration: none;
+}
+form{
+    margin-top: 10rem;
+    /* margin-left: 30rem; */
+}
+a {
+    display: block;
+    margin: auto;
+    width: auto;
+    border: black 0px solid;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    color: azure;
+    margin-top: 5rem;
+}
+.game {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(4, 5rem);
+    grid-template-rows: 14rem 4rem 4rem 4rem;
+}
+.screen, .span {
+    grid-column: span 2;
+}
+.screen {
+    height: 100%
+}
+.input {
+    
+    cursor: pointer;
+    align-items: center;
+    font-size: 2rem;
+    border: white 1px solid;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
+  }
+label {
+    font-size: 1.75rem;
+    color: azure;
+}
+
+
+input[type=text]{
+    font-family: 'Press Start 2P', cursive;
+    display: block;
+    height: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    .game {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: repeat(2, 10rem);
+        grid-template-rows: repeat(4, 5rem);
+        grid-template-rows: 20rem 4rem 4rem 4rem;
+    }
+    form{
+        margin-top: 10rem;
+        margin-left: 23rem;
+    }
+    .button {
+        padding: 10px 25px; 
+        margin: 2rem 0;
+        margin-left: 8rem;
+    }
+  }
+  

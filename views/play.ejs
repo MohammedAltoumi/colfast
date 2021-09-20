@@ -1,0 +1,21 @@
+<%- include("header") %> 
+<script>
+    alert("try to catch as much as you can from matches colors")
+</script>
+<body>
+    <p>00</p>
+    <div class="game">
+        <div style="background-color: red;" class="screen"></div>
+        <button style="background-color: red;" class="↑ ArrowUp span input ">↑</button>
+        <button style="background-color: green;" class="← ArrowLeft input">←</button>
+        <button style="background-color: yellow;" class="→ ArrowRight input">→</button>
+        <button style="background-color: blue;" class="↓ ArrowDown span input">↓</button>  
+    </div>
+    <form action="/play" method="post" hidden>
+        <input name="score" id="score" type="text">
+        <button id="submit" type="submit">submit</button>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="colFast.js"></script>
+</body>
+</html>
